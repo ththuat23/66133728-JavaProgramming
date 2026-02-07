@@ -1,6 +1,7 @@
 package Bai1;
-/*javac TH1.java
-java TH1
+
+/*javac Bai1/TH1.java
+java Bai1.TH1
 */ 
   
 public class TH1 {
