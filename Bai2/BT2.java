@@ -4,13 +4,19 @@ public class BT2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int usd, eur;
-        int vndFromUSD, vndFromEUR;
+        double usd, eur;
+        double vndFromUSD, vndFromEUR;
 
         System.out.print("Nhap so tien USD: ");
-        usd = sc.nextInt();
+        usd = sc.nextDouble();
 
         System.out.print("Nhap so tien EUR: ");
-        eur = sc.nextInt();
+        eur = sc.nextDouble();
+
+        vndFromUSD = usd * 23500;
+        vndFromEUR = eur * 27000;
+
+        System.out.println("Tien VND tu USD: " + vndFromUSD);
+        System.out.println("Tien VND tu EUR: " + vndFromEUR);
     }
 }
