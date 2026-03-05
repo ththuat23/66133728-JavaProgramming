@@ -1,4 +1,4 @@
-package Bai0;
+package Bai0_SayHelloApp;
 
 public class sayHelloapp{
     public static void main(String[] args) {

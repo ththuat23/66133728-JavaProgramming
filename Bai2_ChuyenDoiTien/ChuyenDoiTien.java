@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BT2 {
+public class ChuyenDoiTien {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -18,5 +18,7 @@ public class BT2 {
 
         System.out.println("Tien VND tu USD: " + vndFromUSD);
         System.out.println("Tien VND tu EUR: " + vndFromEUR);
+
+        sc.close();
     }
 }

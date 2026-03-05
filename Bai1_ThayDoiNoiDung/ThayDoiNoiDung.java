@@ -1,10 +1,6 @@
-package Bai1;
+package Bai1_ThayDoiNoiDung;
 
-/*javac Bai1/TH1.java
-java Bai1.TH1
-*/ 
-  
-public class TH1 {
+public class ThayDoiNoiDung {
     public static void main(String[] args) {
         System.out.println("Xin chào! Đây là bài tập thực hành Java số 1.");
         System.out.println("Thông tin cá nhân:");

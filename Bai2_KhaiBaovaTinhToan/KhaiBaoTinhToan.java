@@ -1,4 +1,4 @@
-package Bai2;
+package Bai2_KhaiBaovaTinhToan;
 
 public class KhaiBaoTinhToan {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class KhaiBaoTinhToan {
         // 2. Tính toán
         int tong = a + b;
         double thuong = a / c;
-        int phanDu = a 
+        int phanDu = a; 
         
         // 3. In kết quả
         System.out.println("Tổng: " + tong);
@@ -18,4 +18,4 @@ public class KhaiBaoTinhToan {
         System.out.println("Phần dư: " + phanDu);
     }
 }
-}
+

@@ -1,4 +1,4 @@
-package Bai1;
+package Bai1_HinhVe;
 
 public class HinhVe {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Bai1;
+package Bai1_TinhToan;
 
 public class TinhToan {
     public static void main(String[] args) {

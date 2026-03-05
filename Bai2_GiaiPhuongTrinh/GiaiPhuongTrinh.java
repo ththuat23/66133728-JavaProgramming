@@ -1,6 +1,8 @@
+package Bai2_GiaiPhuongTrinh;
+
 import java.util.Scanner;
 
-public class BT3 {
+public class GiaiPhuongTrinh {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -21,6 +23,7 @@ public class BT3 {
         } else {
             x = -b / a;
             System.out.println("Nghiem x = " + x);
+            sc.close();
         }
     }
 }

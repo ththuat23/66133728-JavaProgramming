@@ -1,6 +1,6 @@
 import java.util.Scanner;
-// Bài 1: tính tiền lương
-public class BT1 {
+
+public class TinhTienLuong {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -21,5 +21,7 @@ public class BT1 {
         }
 
         System.out.println("Tong luong: " + tongLuong);
+        sc.close();
     }
 }
+

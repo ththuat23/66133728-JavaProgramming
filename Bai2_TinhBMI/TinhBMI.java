@@ -1,3 +1,4 @@
+package Bai2_TinhBMI;
 public class TinhBMI { 
     public static void main(String[] args) {
         // BMI = cân nặng (kg) / (chiều cao (m) * chiều cao (m))

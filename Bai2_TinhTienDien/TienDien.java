@@ -1,3 +1,4 @@
+package Bai2_TinhTienDien;
 public class TienDien {
     public static void main(String[] args) {
         /* Tính tiền điện theo bậc thang:
