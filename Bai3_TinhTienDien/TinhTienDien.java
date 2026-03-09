@@ -10,5 +10,15 @@ public class TinhTienDien {
         int kwh = scanner.nextInt();
 
         double tien = 0;
+
+        if (kwh <= 50) {
+            tien = kwh * 1806;
+        } 
+        else if (kwh <= 100) {
+            tien = 50 * 1806 + (kwh - 50) * 1866;
+        } 
+        else {
+            tien = 50 * 1806 + 50 * 1866 + (kwh - 100) * 2167;
+        } 
     }
 }
