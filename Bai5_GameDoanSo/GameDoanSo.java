@@ -45,6 +45,18 @@ public class GameDoanSo {
                 System.out.println("Bạn đã hết lượt!");
                 System.out.println("Số đúng là: " + secretNumber);
             }
-        }
+            int score = (maxAttempts - attempts + 1) * 10;
+            if (score < 0) score = 0;
+
+            System.out.println("Điểm của bạn: " + score);
+
+            System.out.print("Chơi lại? (y/n): ");
+            playAgain = scanner.next();
+
+        } while (playAgain.equalsIgnoreCase("y"));
+
+        System.out.println("Cảm ơn bạn đã chơi!");
+        scanner.close();
+        
     }
 }
