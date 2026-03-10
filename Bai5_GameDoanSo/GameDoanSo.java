@@ -39,6 +39,11 @@ public class GameDoanSo {
                 else {
                     System.out.println("Số bí mật nhỏ hơn!");
                 }
+                System.out.println("Còn lại " + (maxAttempts - attempts) + " lần đoán.");
+            }
+            if (!win) {
+                System.out.println("Bạn đã hết lượt!");
+                System.out.println("Số đúng là: " + secretNumber);
             }
         }
     }
