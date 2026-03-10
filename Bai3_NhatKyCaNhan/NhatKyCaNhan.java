@@ -27,5 +27,22 @@ public class NhatKyCaNhan {
         } catch (IOException e) {
             System.out.println("Lỗi ghi file");
         }
+        // Đọc file
+        System.out.println("\n=== NỘI DUNG FILE ===");
+
+        try {
+            File file = new File("diary.txt");
+            Scanner fileReader = new Scanner(file);
+
+            while (fileReader.hasNextLine()) {
+                System.out.println(fileReader.nextLine());
+            }
+
+            fileReader.close();
+        } catch (IOException e) {
+            System.out.println("Lỗi đọc file");
+        }
+
+        scanner.close();
     }
 }
