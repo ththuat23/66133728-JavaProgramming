@@ -16,5 +16,16 @@ public class NhatKyCaNhan {
 
         System.out.print("Nhập nội dung nhật ký: ");
         String content = scanner.nextLine();
+
+        // Ghi file
+        try {
+            FileWriter writer = new FileWriter("diary.txt", true);
+            writer.write("Ngày: " + date + "\n");
+            writer.write("Nội dung: " + content + "\n");
+            writer.write("--------------------\n");
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("Lỗi ghi file");
+        }
     }
 }
