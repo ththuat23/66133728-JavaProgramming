@@ -1,4 +1,4 @@
-package Bai6_Sach;
+package Bai6_SachOOP;
 
 public class Sach {
 
