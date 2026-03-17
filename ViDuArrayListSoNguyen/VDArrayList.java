@@ -14,9 +14,23 @@ public class VDArrayList {
         Integer tam = banPhim.nextInt();
         dsSoNguyen.add(tam);
 
+        System.out.println("Danh sach vua nhap la: \n");
         for (int i=0; i<dsSoNguyen.size(); i++) {
             Integer tam = dsSoNguyen.get(i);
             System.out.println(tam + " ");
         }
+        // for (Integer x: dsSoNguyen) {
+        //     System.out.println(x + " ");
+        // }
+        int soLuongPTChan = 0;
+        for (Integer x: dsSoNguyen) {
+            if (x % 2 ==0) {
+                soLuongPTChan=soLuongPTChan+1;
+            }
+        }
+        // for (int i=0; i<dsSoNguyen.size(); i++) {
+        //     Integer tam = dsSoNguyen.get(i);
+        //     if (tam % 2 ==0) soLuongPTChan=soLuongPTChan+1;
+        // }
     }
 }
