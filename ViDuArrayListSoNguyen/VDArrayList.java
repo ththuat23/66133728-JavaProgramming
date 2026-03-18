@@ -10,15 +10,17 @@ public class VDArrayList {
         
         for (int i=0; i<10; i++) {
             System.out.println("Mời nhập phần tử thứ "+ i + ": ");
+            Integer tam = banPhim.nextInt();
+            dsSoNguyen.add(tam);
         }
-        Integer tam = banPhim.nextInt();
-        dsSoNguyen.add(tam);
 
         System.out.println("Danh sach vua nhap la: \n");
         for (int i=0; i<dsSoNguyen.size(); i++) {
             Integer tam = dsSoNguyen.get(i);
             System.out.println(tam + " ");
         }
+        banPhim.close();
+        
         // for (Integer x: dsSoNguyen) {
         //     System.out.println(x + " ");
         // }
