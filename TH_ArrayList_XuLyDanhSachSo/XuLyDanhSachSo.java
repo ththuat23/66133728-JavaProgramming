@@ -61,6 +61,29 @@ public class XuLyDanhSachSo {
         else
             System.out.println("Không có số chẵn");
 
+        // 5. Tách danh sách
+        ArrayList<Integer> dsChan = new ArrayList<>();
+        ArrayList<Integer> dsLe = new ArrayList<>();
+
+        for (int x : ds) {
+            if (x % 2 == 0)
+                dsChan.add(x);
+            else
+                dsLe.add(x);
+        }
+
+        System.out.println("Danh sách chẵn: " + dsChan);
+        System.out.println("Danh sách lẻ: " + dsLe);
+
+        // 6. Đảo ngược danh sách (không dùng reverse)
+        for (int i = 0; i < ds.size() / 2; i++) {
+            int temp = ds.get(i);
+            ds.set(i, ds.get(ds.size() - 1 - i));
+            ds.set(ds.size() - 1 - i, temp);
+        }
+
+        System.out.println("Danh sách sau khi đảo: " + ds);
+    
         sc.close();
     }
 }
