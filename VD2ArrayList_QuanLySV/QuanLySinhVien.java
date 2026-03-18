@@ -89,12 +89,12 @@ public class QuanLySinhVien {
         }
         
         System.out.println("\n=== DANH SÁCH SINH VIÊN ===");
-        System.out.println(String.format("STT", "Mã SV", "Họ tên", "Điểm TB"));
+        System.out.println(String.format("%-5s %-10s %-20s %-8s","STT", "Mã SV", "Họ tên", "Điểm TB"));
         System.out.println("=".repeat(50));
         
         for (int i = 0; i < danhSachSV.size(); i++) {
             SinhVien sv = danhSachSV.get(i);
-            System.out.println(String.format(i + 1, sv.getMaSV(), sv.getHoTen(), sv.getDiemTB()));
+            System.out.println(String.format("%-5d %-10s %-20s %-8.2f",i + 1, sv.getMaSV(), sv.getHoTen(), sv.getDiemTB()));
         }
     }
     
