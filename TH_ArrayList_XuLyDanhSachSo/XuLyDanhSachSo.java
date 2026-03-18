@@ -30,6 +30,20 @@ public class XuLyDanhSachSo {
             }
         }
         System.out.println("Sau khi xóa trùng: " + ds);
+        
+        // 3. Tìm số lớn thứ 2
+        int max = ds.get(0);
+        int secondMax = Integer.MIN_VALUE;
+
+        for (int x : ds) {
+            if (x > max) {
+                secondMax = max;
+                max = x;
+            } else if (x > secondMax && x < max) {
+                secondMax = x;
+            }
+        }
+        System.out.println("Số lớn thứ 2: " + secondMax);
 
         sc.close();
     }
