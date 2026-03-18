@@ -19,6 +19,16 @@ public class XuLyDanhSachSo {
         }
 
         System.out.println("Danh sách ban đầu: " + ds);
+
+        // 2. Loại bỏ trùng lặp
+        for (int i = 0; i < ds.size(); i++) {
+            for (int j = i + 1; j < ds.size(); j++) {
+                if (ds.get(i).equals(ds.get(j))) {
+                    ds.remove(j);
+                    j--;
+                }
+            }
+        }
         
         sc.close();
     }
