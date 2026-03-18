@@ -32,18 +32,22 @@ public class XuLyDanhSachSo {
         System.out.println("Sau khi xóa trùng: " + ds);
         
         // 3. Tìm số lớn thứ 2
-        int max = ds.get(0);
-        int secondMax = Integer.MIN_VALUE;
+        if (ds.size() < 2) {
+            System.out.println("Không đủ phần tử tìm số lớn thứ 2");
+        } else {
+            int max = ds.get(0);
+            int secondMax = Integer.MIN_VALUE;
 
-        for (int x : ds) {
-            if (x > max) {
-                secondMax = max;
-                max = x;
-            } else if (x > secondMax && x < max) {
-                secondMax = x;
+            for (int x : ds) {
+                if (x > max) {
+                    secondMax = max;
+                    max = x;
+                } else if (x > secondMax && x < max) {
+                    secondMax = x;
+                }
             }
+            System.out.println("Số lớn thứ 2: " + secondMax);
         }
-        System.out.println("Số lớn thứ 2: " + secondMax);
 
         // 4. Trung bình cộng số chẵn
         int tongChan = 0;
