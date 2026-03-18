@@ -29,7 +29,8 @@ public class XuLyDanhSachSo {
                 }
             }
         }
-        
+        System.out.println("Sau khi xóa trùng: " + ds);
+
         sc.close();
     }
 }
