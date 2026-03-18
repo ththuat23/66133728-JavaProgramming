@@ -45,6 +45,22 @@ public class XuLyDanhSachSo {
         }
         System.out.println("Số lớn thứ 2: " + secondMax);
 
+        // 4. Trung bình cộng số chẵn
+        int tongChan = 0;
+        int demChan = 0;
+
+        for (int x : ds) {
+            if (x % 2 == 0) {
+                tongChan += x;
+                demChan++;
+            }
+        }
+
+        if (demChan > 0)
+            System.out.println("TBC số chẵn: " + (double) tongChan / demChan);
+        else
+            System.out.println("Không có số chẵn");
+
         sc.close();
     }
 }
