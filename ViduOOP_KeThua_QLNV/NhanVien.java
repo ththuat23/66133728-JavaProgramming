@@ -6,7 +6,7 @@ public class NhanVien {
     private String hoTen;
     private double luongCoBan;
 
-    public NhanVien(String maNhanVien, String tenNhanVien, double luongCoBan) {
+    public NhanVien(String maNhanVien, String tenNhanVien, Double luongCoBan) {
         super();
         this.maNV = maNhanVien;
         this.hoTen = tenNhanVien;
@@ -20,6 +20,10 @@ public class NhanVien {
     }
     @Override
     public String toString() {
+        String chuoiXuat="";
+        chuoiXuat = chuoiXuat + "Mã NV: " + this.maNV;
+        chuoiXuat = chuoiXuat + "\nHọ tên: " + this.hoTen;
+        chuoiXuat = chuoiXuat + "\nLương cơ bản: " + this.luongCoBan;
         return "NhanVien [maNV=" + maNV + ", hoTen= " + hoTen +", luongCoBan= " + luongCoBan + "]";
     }
 
