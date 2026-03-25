@@ -14,5 +14,20 @@ public class MainNhanVien {
 
         QuanLy nv4 = new QuanLy(
                 "NV04", "Phạm Văn D", 7000, 2000, 1.5);
+        // Hiển thị thông tin
+        System.out.println("\n=== NHÂN VIÊN THƯỜNG ===");
+        nv1.hienThiThongTin();
+        System.out.println("Tổng lương: " + nv1.tinhLuong());
+
+        System.out.println("\n=== NHÂN VIÊN KINH DOANH ===");
+        nv2.hienThiThongTin();
+        nv2.chamSocKhachHang();
+
+        System.out.println("\n=== NHÂN VIÊN VĂN PHÒNG ===");
+        nv3.hienThiThongTin();
+
+        System.out.println("\n=== QUẢN LÝ ===");
+        nv4.hienThiThongTin();
+        nv4.hopBanGiamDoc();
     }
 }
