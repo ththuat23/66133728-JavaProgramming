@@ -40,10 +40,15 @@ public class HocSinh {
 
     @Override
     public String toString() {
-        return "{" +
-            " tenHS='" + getTenHS() + "'" +
-            ", tuoiHS='" + getTuoiHS() + "'" +
-            ", lopHS='" + getLopHS() + "'" +
-            "}";
+        String ChuoiXuat;
+        ChuoiXuat = "Tên học sinh: "+ tenHS; 
+        ChuoiXuat = ChuoiXuat + "Tuổi học sinh: "+ tuoiHS;
+        ChuoiXuat = ChuoiXuat + "Lớp học sinh: " + lopHS;
+        return ChuoiXuat;
+    //     return "{" +
+    //         " tenHS='" + getTenHS() + "'" +
+    //         ", tuoiHS='" + getTuoiHS() + "'" +
+    //         ", lopHS='" + getLopHS() + "'" +
+    //         "}";
     }
 }
