@@ -32,13 +32,17 @@ public class Run {
         String tenHS3 = banPhim.nextLine();
         hs3.setTenHS(tenHS3);
         
-        System.out.println("Mời nhập tên của học sinh 3: ");
+        System.out.println("Mời nhập tuổi của học sinh 3: ");
         short tuoiHS3 = banPhim.nextShort();
         hs3.setTuoiHS(tuoiHS3);
+        banPhim.nextLine(); //Thêm dòng này để nhập được lớp
 
-        System.out.println("Mời nhập tên của học sinh 3: ");
+        System.out.println("Mời nhập lớp của học sinh 3: ");
         String lopHS3 = banPhim.nextLine();
         hs3.setLopHS(lopHS3);
+
+        System.out.println(hs3.toString());
         
+        banPhim.close();
     }
 }
