@@ -41,9 +41,9 @@ public class HocSinh {
     @Override
     public String toString() {
         String ChuoiXuat;
-        ChuoiXuat = "Tên học sinh: "+ tenHS; 
-        ChuoiXuat = ChuoiXuat + "Tuổi học sinh: "+ tuoiHS;
-        ChuoiXuat = ChuoiXuat + "Lớp học sinh: " + lopHS;
+        ChuoiXuat = "\nTên học sinh: "+ tenHS; 
+        ChuoiXuat = ChuoiXuat + "\nTuổi học sinh: "+ tuoiHS;
+        ChuoiXuat = ChuoiXuat + "\nLớp học sinh: " + lopHS;
         return ChuoiXuat;
     //     return "{" +
     //         " tenHS='" + getTenHS() + "'" +
