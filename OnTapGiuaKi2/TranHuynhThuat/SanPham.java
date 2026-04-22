@@ -10,22 +10,27 @@ public class SanPham {
     public SanPham() {}
 
     public SanPham(String maSP, String tenSP, double gia, int soLuong) {
-        this.maSP=maSP;
+        setMaSP(maSP);
         this.tenSP = tenSP;
-        this.gia = gia;
-        this.soLuong = soLuong;
+        setGia(gia);
+        setSoLuong(soLuong);
     }
-    //Getter và Setter
+
+    //Getter và Setter + Validation
     public String getMaSP() {
-        return this.maSP;
+        return maSP;
     }
 
     public void setMaSP(String maSP) {
-        this.maSP = maSP;
+        if (maSP == null || maSP.trim().isEmpty()) {
+            System.out.println("Mã SP không hợp lệ!");
+        } else {
+            this.maSP = maSP;
+        }
     }
 
     public String getTenSP() {
-        return this.tenSP;
+        return tenSP;
     }
 
     public void setTenSP(String tenSP) {
@@ -33,19 +38,27 @@ public class SanPham {
     }
 
     public double getGia() {
-        return this.gia;
+        return gia;
     }
 
     public void setGia(double gia) {
-        this.gia = gia;
+        if (gia > 0) {
+            this.gia = gia;
+        } else {
+            System.out.println("Giá phải > 0!");
+        }
     }
 
     public int getSoLuong() {
-        return this.soLuong;
+        return soLuong;
     }
 
     public void setSoLuong(int soLuong) {
-        this.soLuong = soLuong;
+        if (soLuong >= 0) {
+            this.soLuong = soLuong;
+        } else {
+            System.out.println("Số lượng phải ≥ 0!");
+        }
     }
 
     // Tính thành tiền
