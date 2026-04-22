@@ -1,0 +1,1 @@
+Đây chỉ là bài ôn tập trước ngày thi giữa kì
