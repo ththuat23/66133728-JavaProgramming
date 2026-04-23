@@ -2,7 +2,6 @@ package ViDuStreamDocChuoi;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -23,5 +22,6 @@ public class ViDuDocStream {
         // In ra dòng đọc được
         System.out.println(line2);
 
+        fInput.close();
     }
 }
