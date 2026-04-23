@@ -48,6 +48,10 @@ public class SinhVien {
         this.diemTB = diemTB;
     }
     
+    public int tinhTuoi(int namHienTai) {
+        return namHienTai - this.namSinh;
+    }
+
     @Override
     public String toString() {
         return "{" +

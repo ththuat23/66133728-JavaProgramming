@@ -48,6 +48,20 @@ public class Main {
         SinhVien svMoi = new SinhVien(maSV, hoTen, namSinh, diemTB);
         ds.add(svMoi);
 
+        // In lại danh sách
+        System.out.println("\n=== Danh sách sau khi thêm ===");
+        for (SinhVien sv : ds) {
+            System.out.println(sv);
+        }
+
+        // In sinh viên lớn hơn 20 tuổi
+        System.out.println("\n=== Sinh viên lớn hơn 20 tuổi ===");
+        for (SinhVien sv : ds) {
+            if (sv.tinhTuoi(namHienTai) > 20) {
+                System.out.println(sv);
+            }
+        }
+        
         banPhim.close();
     }
 }
