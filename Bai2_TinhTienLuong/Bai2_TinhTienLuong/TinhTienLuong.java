@@ -1,3 +1,5 @@
+package Bai2_TinhTienLuong;
+
 import java.util.Scanner;
 
 public class TinhTienLuong {

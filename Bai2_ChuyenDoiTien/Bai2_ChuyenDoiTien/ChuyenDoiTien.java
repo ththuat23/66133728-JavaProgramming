@@ -1,3 +1,5 @@
+package Bai2_ChuyenDoiTien;
+
 import java.util.Scanner;
 
 public class ChuyenDoiTien {
